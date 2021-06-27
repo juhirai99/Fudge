@@ -1,0 +1,22 @@
+.backgroundChild{
+    background: linear-gradient(to right, #023614, #003B14D9), url("/assets/dan-asaki-0uLVXFz6obg-unsplash@2x.png") ;
+    background-size:  cover;
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    width: 100%;
+    height: 100%;
+}
+
+#biggerline {
+    width: 15%;
+    height: 7px;
+    animation-name: example;
+    animation-duration: 1s;
+  }
+  
+  @keyframes example {
+    0%   {width: 30%;}
+    25%  {width: 45%;}
+    50%  {width: 60%;}
+    100% {width: 80%;}
+  }

@@ -1,0 +1,44 @@
+
+<div class="" >
+  <div *ngIf="!showChildComponet" style="margin: 0px; height: 100vh;" class="backgroundClasss">
+  <div class="backgroundClass1" id="firstDiv"  [style]="showMainDiv()">
+    <div class="row">
+      <div class="col-sm-12" style="text-align: center; top:50% ; position: absolute; width: 100%;">
+        <img src="/assets/image/Group 1@2x.png" style="max-width: 100px; height: 30px;"/>
+      </div>
+     </div>   
+     <div class="row">
+      <div class="col-sm-12" style="text-align: center; top: 90% ; position: absolute; width: 100%;" (click)="scrollOtherDiv()">
+        <a href="#secondDiv" ><img src="/assets/image/arrow-down-24@2x.png"  style="width: 15px;"/></a>
+      </div>
+     </div>   
+  </div>
+  <!--second Child!-->
+   <div class="backgroundClass" [style]="showAnotherDiv()">
+    <div style=" position:absolute; top:40%; width:100%" class="row">
+    <div class="col-sm-12 col-md-12" style="text-align: center;">
+    <div class="row" >
+      
+      <div class="col-sm-12 animate__animated animate__slideInUp" style="text-align: center; width: 100%;">
+        <img src="/assets/image/Group 1@2x.png" style="max-width: 100px; height: 30px;"/>
+      </div>
+      <div class="col-sm-12 animate__animated animate__slideInUp" style="text-align: center; margin-top: 20px; width: 100%">
+        <span class="font-style">All your finances in one place.</span> <br><br>
+        <span class="font-style_regular">Find out how our team of highly qualified financial consultants can help <br> you achieve your financial goals.</span>
+        </div>
+     </div> 
+     <div class="row animate__slideInUp" style="margin-top: 20px; width: 100%">
+      <div class="col-sm-12" style="text-align: center;">
+        <button class="btn_color"(click)="openChildComponent()">View Dashboard</button>
+      </div>
+  </div> 
+  </div> 
+</div>
+  </div>
+  
+  </div>  
+<app-child *ngIf="showChildComponet" ></app-child>
+</div>
+
+
+<router-outlet></router-outlet>

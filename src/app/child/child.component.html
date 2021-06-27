@@ -1,0 +1,9 @@
+<div class="backgroundChild" id="child" style="margin: 0px; height: 100vh; width: 100%;" *ngIf="!showSecondPanel">
+    <div class="row">
+        <div class="col-sm-12" style="text-align: center; top:50% ; position: absolute; width: 100%;">
+          <img src="/assets/image/small.png" />
+        </div>
+    </div>   
+</div>
+<app-secondchild id="child1" *ngIf="!showFirstPanel"></app-secondchild>
+<app-dashboard *ngIf="showDashboard"></app-dashboard>

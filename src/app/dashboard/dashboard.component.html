@@ -1,0 +1,207 @@
+<div class=" " >
+<div class="row" style="height : 100vh; width: 100%; margin:0px; ">
+<div class="col-12 col-md-3 col-sm-12 sidebar backgroundClass">
+  <div class="row" style="margin-top: 24px;">
+    <div class="col-12 col-md-12 col-sm-12" style="text-align : center">
+      <img src="/assets/image/Group 1@2x.png" style="max-width: 78px;max-height:38px;"/>
+    </div>
+  </div>
+
+<div class="row" style="margin-left : 37px; margin-top: 50px;">
+  <div class="col-12 col-md-12 col-sm-12">
+    <a #href> <i class="fa fa-object-group" aria-hidden="true"></i>
+Dashboard   <i class="fa fa-caret-right" aria-hidden="true"></i>
+</a>
+    <a #href> <i class="fa fa-user-plus" aria-hidden="true"></i>
+       Advisor</a>
+    <a #href> <i class="fa fa-file-text" aria-hidden="true"></i>  My Documents</a>
+    <a #href><i class="fa fa-rss" aria-hidden="true"></i>  News Feed</a>
+    <a #href> <i class="fa fa-phone" aria-hidden="true"></i>  Support</a>
+  </div>
+  
+</div>
+
+</div>
+<div class="col-12 col-md-9 col-sm-12 content animate__animated animate__fadeInUpBig">
+  <div class="row">
+  <div class="col-12 col-md-8 col-sm-12  animate__animated animate__backInDown">
+    <img src="/assets/image/Ellipse 379@2x.png" alt="Avatar" class="avatar">
+    <span style="padding-left: 10px;" class="font_small">Welcome, <b>Alex Martin. </b>Here’s your personalized financial dashboard</span>
+  </div>
+  <div class="col-12 col-md-2 col-sm-12" style="text-align: right; padding-top: 13px;">
+    <span class="font_small">Currency GBP <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </span>
+  </div>
+  <div class="col-12 col-md-2 col-sm-12" style="margin-top: 13px; text-align: right;">
+    <span class="font_small">My Account <i class="fa fa-chevron-down" aria-hidden="true"></i>
+    </span>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-3 col-sm-12  animate__animated animate__backInDown" style="margin-top: 5px;">
+      <span class="font_regular">Dashboard Home</span>
+    </div>
+    <div class="col-12 col-md-9 col-sm-12  animate__animated animate__backInDown" style="text-align: left; margin-top: 8px; margin-left: -86px;">
+      <img src="/assets/image/Line 82.png">
+    </div>
+  </div>
+  <div class="row" style="margin-left : 0px;">
+
+    <div class="col-6 col-md-6 col-sm-12">
+      <div class="row">
+        <h6 class=" animate__animated animate__backInDown">Quick Stats</h6>
+        <div class="col-12 col-md-5 col-sm-11 card  animate__animated animate__backInDown" >
+          <div class="text_center" style="min-height: 100px; text-align: center;">
+            <span class="font_regular animate__animated animate__backInDown">£563,350</span> <br/>
+            <span class="font_small animate__animated animate__backInDown"> Your net worth as of today</span>
+            <!-- <img src="img_avatar.png" alt="Avatar" style="width:100%">
+            <div class="container">
+              <h4><b>John Doe</b></h4> 
+              <p>Architect & Engineer</p> 
+            </div> -->
+          </div>
+       </div>
+       <div class="col-12 col-md-3 col-sm-12 card text_center margin_left  animate__animated animate__backInDown" style="min-height: 100px" id="Monthy">
+        <span class="font_regular">£12,430</span><br>
+        <span class="font_small">Monthy Cashflow</span>
+       </div>
+       <div class="col-12 col-md-3 col-sm-12 card text_center margin_left  animate__animated animate__backInDown" style="min-height: 100px;">
+        <span class="font_regular  animate__animated animate__backInDown">£161,430</span><br>
+        <span class="font_small  animate__animated animate__backInDown">Overall Liabilities</span>
+       </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-sm-12" >
+      <div class="row">
+      <div class="col-12 col-md-6 col-sm-6">
+      <h6 class=" animate__animated animate__backInDown">My Financial Health</h6>
+      </div>
+      <div class="col-12 col-md-6 col-sm-6  animate__animated animate__backInDown" style="text-align: right;">
+        <button class="button_class">View Financial Health</button>
+        </div>
+      </div>
+      <div class="row ">
+      <div class="col-12 col-md-12 col-sm-12 card margin_left">
+      <div class="row">
+        <div class="col-12 col-md-12 col-sm-12  animate__animated animate__backInDown">
+        <img src="/assets/image/progress.png" style="width: 100%; height: 100%; margin-top: 20px;"/>
+      </div>
+      </div>  
+      <div class="row  animate__animated animate__backInDown">
+        
+        <div class="col-12 col-md-12 col-sm-12 card">
+          <hr style="height:1px;border-width:0;color:gray;background-color:gray">
+          <span style="font-size: 7px;">
+            Your financial health status is GOOD. However there’s still room for improvement. <a #href>See how you can improve</a>
+          </span>
+        </div>
+      </div>
+     </div>
+     </div>
+     </div>
+    </div>
+    <div class="row" style="margin-top: 32px;">
+      <div class="col-12 col-md-6 col-sm-12 ">
+        <h6>My Performance</h6>
+        <div class="flex">
+          <div class="flex-item">
+            <div style="display: block;">
+            <canvas baseChart width="400" height="220"
+                        [datasets]="lineChartData"
+                        [labels]="lineChartLabels"
+                        [options]="lineChartOptions"
+                        [colors]="lineChartColors"
+                        [legend]="lineChartLegend"
+                        [chartType]="lineChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)" style="margin-top: 17px;"></canvas>
+            </div>
+            <div class="progress-circle p10">
+              <span>10%</span>
+              <div class="left-half-clipper">
+                <div class="first50-bar"></div>
+                <div class="value-bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-12 col-md-6 col-sm-12 ">
+        <h6>My Goals</h6>
+        <div class="row margin_left">
+          <div class="col-12 col-md-4 col-sm-12 card  " style="height:230px; margin-top:16px; min-width: 130px">
+            <h6>Retirement</h6>
+            <circle-progress [percent]="65" [radius]="40" 
+            [animation]="true" [animationDuration]="300"></circle-progress>
+            <hr style="width:100%;margin-left:0">
+             <span style="font-size: 9px;">£563,350&nbsp;&nbsp;&nbsp;&nbsp;£2000,00</span>
+          </div>
+          <div class="col-12 col-md-4 col-sm-12 card margin_left" style="height:230px; margin-top:16px;">
+            <h6>Vacation Home</h6>
+            <circle-progress [percent]="78" [radius]="40" 
+            [animation]="true" [animationDuration]="300"></circle-progress>
+            <hr style="width:100%;margin-left:0">
+             <span style="font-size: 9px;">£101,342&nbsp;&nbsp;&nbsp;&nbsp;£1500,000</span>
+          </div>
+          <div class="col-12 col-md-3 col-sm-12 card margin_left" style="height:230px; margin-top:16px; min-width: 130px;">
+            <h6>Travel</h6>
+            <circle-progress [percent]="46" [radius]="40" 
+            [animation]="true" [animationDuration]="300"></circle-progress>
+            <hr style="width:100%;margin-left:0">
+             <span style="font-size: 9px;">£46,350&nbsp;&nbsp;&nbsp;&nbsp;£1000,00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 25px; margin-left: 0px;">
+      <div class="col-12 col-md-6 col-sm-12 card" style="min-height: 420px;">
+       <p style="padding-top: 23px;"><b>Industry News</b></p>
+       <div *ngFor= " let data of pagedItems">
+         <p><b style="font-size: 13px;">{{data.title}}</b> </p>
+         <span style="font-size: 12px;">{{data.body}}</span> <br>
+         <p><a style="color:#1461d8; font-size: 11px;">Read Full article</a></p>
+        
+       </div>
+       <div *ngIf="pager.pages && pager.pages.length" class="pagination" style="bottom :0 ; position: absolute;">
+        
+        <div *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}" class="pagination">
+          <a href="#" *ngIf="page==1" [ngClass]="{disabled:pager.currentPage === 1}"  (click)="setPage(1)">&laquo;</a>
+          <a (click)="setPage(page)" [ngClass]="{disabled:pager.currentPage === 1}">{{page}}</a>
+          <a href="#" *ngIf="page==5" (click)="setPage(pager.currentPage - 1)">&raquo;</a>
+        </div>
+        <!-- <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+            <a (click)="setPage(pager.currentPage + 1)">Next</a>
+        </li>
+        <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+            <a (click)="setPage(pager.totalPages)">Last</a>
+        </li> -->
+       </div>
+      </div>
+      <div class="col-12 col-md-3 col-sm-12 card margin_left" style="min-height: 420px">
+        <p style="padding-top: 23px;"><b>Top Comments</b></p>
+        <div *ngFor="let comment of allComment">
+          <img [src]="comment.url" alt="Avatar" class="avatar" style="width: 30px; height: 30px;">
+          <b style="font-size: 12px;"> {{comment.name}}</b><br>
+          <p style="font-size: 10px;">{{comment.body}}</p>
+        </div>
+        
+      </div>
+      <div class="col-12 col-md-2 col-sm-12 card margin_left" style="min-height: 420px; min-width: 220px; ">
+        <p style="padding-top: 23px;"><b>Users</b></p>
+        <div *ngFor="let user of users">
+          <div style="margin-top: 3px">
+            <img [src]="user.url"alt="Avatar" class="avatar" style="width: 40px; height: 40px;">
+            <span style="font-size: 10px;"><b>&nbsp;&nbsp;{{user.name}}</b></span>
+          </div>
+          
+        </div>
+      </div>
+    <div>
+      
+    </div>
+    </div>
+  </div>
+  
+</div>
+</div>  

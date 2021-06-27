@@ -1,0 +1,9 @@
+.backgroundChild{
+    background: linear-gradient(to right, #023614, #003B14D9), url("/assets/dan-asaki-0uLVXFz6obg-unsplash@2x.png") ;
+    background-size:  cover;
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    width: 100%;
+    height: 100%;
+}
+

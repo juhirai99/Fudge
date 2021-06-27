@@ -1,0 +1,114 @@
+
+
+.backgroundClass1{
+    background: linear-gradient(to right, #023614, #003B14D9), url("/assets/image/BGImage.png") ;
+    background-size:  cover;
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    width: 100%;
+    height: 100%;
+}
+
+.font-style {
+font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+font-size : 2.4rem;
+color : white;
+font-weight: bold;
+
+}
+.font-style_regular {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size : 1.4rem;
+    color : #B2B2B2;    
+}
+
+.btn_color {
+    background: none;
+    color : #B2B2B2; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 24px;
+    padding-right: 24px;   
+    border-radius: 6px;;
+    font-size : 1.5rem;
+    font-weight: 100;
+    border : 1px solid #B2B2B2
+
+}
+
+.full-height{
+    min-height : 100%;
+    background : yellow
+}
+
+.red {
+    outline: 100px solid rgba(255, 0, 0, 0.5) !important;
+    outline-offset: -100px;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.green {
+    background-color: green;
+    color: #FFF;
+  }
+ 
+.overlayed {
+    position: relative;
+}
+
+.overlayed::before {
+    content: ' ';
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000080;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  .backgroundClasss {
+    height: 100vh;
+    background: linear-gradient(to right, #023614, #003B14D9), url("/assets/dan-asaki-0uLVXFz6obg-unsplash@2x.png") ;
+    background-size: cover;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  
+  .backgroundClass {
+    height: 100vh;
+    background: linear-gradient(to right, #023614, #003B14D9), url("/assets/dan-asaki-0uLVXFz6obg-unsplash@2x.png") ;
+    background-size: cover;
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    animation: shrink 2s  ;
+    animation-fill-mode: forwards;
+    transition: all 0.2s ease-in-out;
+
+  }
+  @keyframes shrink {
+    0% {
+      transform: scale(1.0);
+      transition: all 2s ease-in;
+
+    }
+
+    
+
+    100% {
+      transform: scale(1.2);
+      transition: all 2s ease-in;
+    }
+  }
+  

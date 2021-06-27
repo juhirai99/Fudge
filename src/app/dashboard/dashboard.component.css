@@ -1,0 +1,174 @@
+/* .sidenav {
+    height: 100vh;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-left : -15px;
+  } */
+
+  .sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  } 
+  
+  .sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    width: 80%;
+    margin-left:21%
+  }
+  
+  .backgroundClass{
+    background: linear-gradient(to right, #023614, #003B14D9), url("/assets/dan-asaki-0uLVXFz6obg-unsplash@2x.png") ;
+    background-size:  cover;
+    background-repeat:   no-repeat;
+    background-position: center center;  
+    min-width: 100px;
+    height: 100%;
+    }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  .avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: #013513b3;
+    color: white;
+    border-radius: 20px;
+  }
+  
+  div.content {
+    margin-left: 219px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  .font_small{
+    font-family: "HelveticaNeue-Light";
+    font-size: 11px;
+  }
+  .font_regular{
+    font-family: "HelveticaNeue-regular";
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .text_center{
+    padding-top : 19px;
+  }
+  .button_class{
+    border: none;
+    border-radius: 24px;
+    font-size: 11px;
+    padding: 6px;
+
+
+  }
+  .margin_left {
+  margin-left : 18px
+  }
+
+  .animate__animated.animate__fadeInUpBig {
+    --animate-duration: 2s;
+  }
+
+  .pagination {
+    display: inline-block;
+  }
+  
+  .pagination a {
+    color: blue;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  @media screen and (max-width: 770px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+    .margin_left {
+      margin-left : 0px !important
+    }
+  }
+ 
+  @media screen and (max-width: 500px) {
+    .margin_left {
+      margin-left : 0px !important
+    }
+  }
+  @media screen and (max-height: 770px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    .margin_left {margin-left : 0px !important}
+  }
+  ul li:last-child { 
+    border:none; 
+  } 
