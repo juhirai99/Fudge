@@ -1,13 +1,13 @@
 Please find the steps below <br>
 
-Please install npm and node on your system  , skip this step you have npm and node alreay  installed on your laptop 
-install visual studio code 
-open project in visual studio 
-open terminal in visual studio
-run npm install
-run npm install -g json-server for fake api
-run json-server --watch db.json to watch fake api server
-run ng serve
+Please install npm and node on your system  , skip this step you have npm and node alreay  installed on your laptop  <br>
+install visual studio code  <br>
+open project in visual studio  <br>
+open terminal in visual studio  <br>
+run npm install  <br>
+run npm install -g json-server for fake api  <br>
+run json-server --watch db.json to watch fake api server  <br>
+run ng serve  <br>
 type localhost:4200 in the browser to access the application
 
 
