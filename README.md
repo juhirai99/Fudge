@@ -1,6 +1,6 @@
-Please find the steps below
+Please find the steps below <br>
 
-Please install npm and node on your system  , skip this step you have npm and node alreay  installed on your laptop
+Please install npm and node on your system  , skip this step you have npm and node alreay  installed on your laptop 
 install visual studio code 
 open project in visual studio 
 open terminal in visual studio
